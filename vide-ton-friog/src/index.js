@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from "./components/Pages/HomePage";
 import NotFound from './notFound.webp'
-import Cart from "./components/Cart/Cart";
+import Cart from "./Cart/Cart";
+import Favorites from "./components/Favorites/Favorites";
+import Profile from "./components/Profile/Profile";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -14,6 +16,8 @@ root.render(
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/favorites" element={<Favorites/>}/>
             <Route
                 path="*"
                 element={

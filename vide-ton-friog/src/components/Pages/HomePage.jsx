@@ -4,12 +4,19 @@ import HeaderPage from "../Header/Header";
 
 function HomePage() {
     return(
-        <div className="homePage">
-            <HeaderPage/>
-            <p>
-                Coucou
-            </p>
+        <div>
+            <div className="header">
+                <HeaderPage/>
+            </div>
+            <div className="homePage">
+
+
+                <p>
+                    Coucou
+                </p>
+            </div>
         </div>
+
     )
 }
 
