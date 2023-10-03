@@ -1,13 +1,13 @@
-//Home.tsx
+//CartPage.tsx
 
-function Home() {
+function CartPage() {
     return(
         <div className="homePage">
             <p>
-                Coucou
+                Coucou from Cart
             </p>
         </div>
     )
 }
 
-export default Home;
+export default CartPage;
