@@ -13,12 +13,12 @@ function HeaderPage() {
                 <Link to="/">
                     <Logo />
                 </Link>
-                <Link to="/hotPlates">
+                <Link to="/plates">
                     <h3>
                         Plats chauds
                     </h3>
                 </Link>
-                <Link to="/coldPlates">
+                <Link to="/plates">
                     <h3>
                         Plats froids
                     </h3>
