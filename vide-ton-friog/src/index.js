@@ -4,7 +4,7 @@ import './index.css'
 import App from "./components/Pages/App";
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import HomePage from "./components/Pages/HomePage";
+import InscriptionPage from './components/Pages/InscriptionPage';
 import NotFound from './notFound.webp'
 import Cart from "./Cart/Cart";
 import Favorites from "./components/Favorites/Favorites";
@@ -18,10 +18,12 @@ root.render(
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/favorites" element={<Favorites/>}/>
+            <Route path="/inscription" element={<InscriptionPage/>}/>
             <Route
                 path="*"
                 element={
                     <img
+                        alt=''
                         src={NotFound}
                         style={{
                             textAlign: 'center',
