@@ -10,11 +10,12 @@ a {
 .navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navBar{
     display: flex;
-    align-items: center;
+    align-self: center;
 }
 
 .navBar svg {
@@ -26,6 +27,7 @@ a {
 .categories {
     display: flex;
     text-align: center;
+    align-items: center;
 }
 
 .categories a h3 {

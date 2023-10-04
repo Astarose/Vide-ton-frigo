@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from "./components/Pages/HomePage";
 import NotFound from './notFound.webp'
-import Cart from "./Cart/Cart";
-import Favorites from "./components/Favorites/Favorites";
-import Profile from "./components/Profile/Profile";
+import Cart from "./components/Pages/Cart/Cart";
+import Favorites from "./components/Pages/Favorites/Favorites";
+import Profile from "./components/Pages/Profile/Profile";
+import About from "./components/Pages/About/About";
+import Plates from "./components/Pages/Plates/Plates";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -18,6 +20,8 @@ root.render(
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/favorites" element={<Favorites/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/plates" element={<Plates/>}/>
             <Route
                 path="*"
                 element={

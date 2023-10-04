@@ -1,0 +1,34 @@
+.platesContainer {
+    margin: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+}
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.plateItem{
+    border: 0.1rem solid #D2D2D7;
+    border-radius: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    padding: 1rem;
+}
+
+#picture{
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.toto{
+    display: flex;
+    justify-content: space-between;
+}
