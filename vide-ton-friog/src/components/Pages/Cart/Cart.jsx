@@ -91,7 +91,7 @@ function CartPage() {
             <HeaderPage/>
             <div className="cartContainer">
                 <div className="cartItemContainer">
-                    {panier.length !== 0 ? (
+                    {panier && panier.length !== 0 ? (
                         panier.map((item) => (
                             <CartItem
                                 key={item.id}
