@@ -8,7 +8,7 @@
 .cartItem{
     border: 0.1rem solid #D2D2D7;
     border-radius: 1rem;
-    margin: 2em;
+    margin: 2rem;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
