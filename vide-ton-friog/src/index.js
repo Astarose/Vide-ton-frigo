@@ -9,6 +9,7 @@ import NotFound from './notFound.webp'
 import Cart from "./Cart/Cart";
 import Favorites from "./components/Favorites/Favorites";
 import Profile from "./components/Profile/Profile";
+import ConnexionPage from './components/Pages/ConnexionPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -19,6 +20,7 @@ root.render(
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/favorites" element={<Favorites/>}/>
             <Route path="/inscription" element={<InscriptionPage/>}/>
+            <Route path="/connexion" element={<ConnexionPage/>}/>
             <Route
                 path="*"
                 element={

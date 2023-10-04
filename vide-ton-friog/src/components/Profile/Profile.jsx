@@ -10,10 +10,17 @@ function Profile() {
         </div>
         <div className="homePage">
             <Link to="/inscription">
-                    <h3>
-                        Inscription
-                    </h3>
-                </Link>
+                <h3>
+                    Inscription
+                </h3>
+            </Link>
+        </div>
+        <div className="homePage">
+            <Link to="/connexion">
+                <h3>
+                    connexion
+                </h3>
+            </Link>
         </div>
         </div>
     )

@@ -30,8 +30,9 @@ function Inscription() {
     <div>
       <h2>Inscription</h2>
       <form onSubmit={handleSubmit} className="formulaire" method="post">
-        <div className="input">
+        <div>
           <input
+            className="input"
             placeholder="prénom"
             type="text"
             id="firstName"
@@ -41,8 +42,9 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input"> 
+        <div>
           <input
+            className="input"
             placeholder="nom"
             type="text"
             id="lastName"
@@ -52,8 +54,9 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input">
+        <div>
           <input
+            className="input"
             placeholder="adresse"
             type="text"
             id="address"
@@ -63,8 +66,9 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input">
+        <div>
           <input
+            className="input"
             placeholder="adresse mail"
             type="email"
             id="email"
@@ -74,8 +78,9 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input">
+        <div>
           <input
+            className="input"
             placeholder="mot de passe"
             type="password"
             id="password"
@@ -87,8 +92,9 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input">
+        <div>
           <input
+            className="input"
             placeholder="code postal"
             type="text"
             id="postalCode"
@@ -98,9 +104,10 @@ function Inscription() {
             required
           />
         </div>
-        <div className="input">
+        <div>
           <input
-            placeholder="city"
+            className="input"
+            placeholder="ville"
             type="text"
             id="city"
             name="city"
@@ -109,16 +116,18 @@ function Inscription() {
             required
           />
         </div>
-          <div className="groupeCda">
+        <div className="groupeCda">
+          <div>
           <button className="cda" type="submit">
             S'inscrire
           </button>
-          <Link to="/">
-            <button className="cda">
-              Se connecter
-            </button>
+          </div>
+          <div>
+          <Link to="/connexion">
+            <button className="cda">Se connecter</button>
           </Link>
           </div>
+        </div>
       </form>
     </div>
   );

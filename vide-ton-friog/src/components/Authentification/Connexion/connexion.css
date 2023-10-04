@@ -8,6 +8,7 @@
 
 .input{
     margin: auto;
+    width: 100%;
 }
 
 .groupeCda{
@@ -26,3 +27,4 @@
     margin: 5px;
     padding: 5px;
 }
+
