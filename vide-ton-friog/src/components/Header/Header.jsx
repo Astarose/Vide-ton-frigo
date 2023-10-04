@@ -15,12 +15,7 @@ function HeaderPage() {
                 </Link>
                 <Link to="/plates">
                     <h3>
-                        Plats chauds
-                    </h3>
-                </Link>
-                <Link to="/plates">
-                    <h3>
-                        Plats froids
+                        Produits
                     </h3>
                 </Link>
                 <Link to="/about">
