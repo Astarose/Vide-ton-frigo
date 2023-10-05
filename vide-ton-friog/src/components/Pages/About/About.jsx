@@ -4,6 +4,7 @@ import { GiSaucepan } from 'react-icons/gi';
 import { GiKnifeFork } from 'react-icons/gi';
 import { CgShoppingBag } from 'react-icons/cg';
 import HeaderPage from "../../Header/Header";
+import { IconContext } from "react-icons";
 import './about.css';
 
 
@@ -24,25 +25,42 @@ function About() {
                     <h2 id="tagline">Tout le monde y gagne !</h2>
                 </div>
                 <div id="explainations">
-                    <div id="symbols">
-                        <h2 id="tagline">Comment ça marche ?</h2>
-                        <div>
-                            <GiSaucepan/>
-                            <p>1. Cuisinez de délicieux plats</p>
+                    <h2 id="tagline">Comment ça marche ?</h2>
+                        <div id="symbols">
+                            <div>
+                                <IconContext.Provider
+                                    value={{ color: 'white', size: '50px' }}
+                                >
+                                    <div className="explainationsIcon">
+                                        <GiSaucepan/>
+                                    </div>
+                                </IconContext.Provider>
+                                <p>1. Cuisinez de délicieux plats</p>
+                            </div>
+                            <div>
+                                <IconContext.Provider
+                                    value={{ color: 'white', size: '50px' }}
+                                >
+                                    <div className="explainationsIcon">
+                                        <CgShoppingBag/>
+                                    </div>
+                                </IconContext.Provider>
+
+                                <p>2. Vendez sur Vide Ton Frigo</p>
+                            </div>
+                            <div>
+                                <div className="explainationsIcon">
+                                    <GiKnifeFork/>
+                                </div>
+                                <p>3. Aidez quelqu'un dans le besoin</p>
+                            </div>
                         </div>
-                        <div>
-                            <CgShoppingBag/>
-                            <p>2. Vendez sur Vide Ton Frigo</p>
-                        </div>
-                        <div>
-                            <GiKnifeFork/>
-                            <p>Aidez quelqu'un dans le besoin</p>
-                        </div>
-                    </div>
                     <div id="values">
-                        <h2 id="tagline">Nos valeurs!</h2>
-                        <p>Chez Vide ton Frigo, nos valeurs sont au cœur de tout ce que nous faisons. Nous voulons réduire le gaspillage alimentaire, rendre la nourriture saine plus accessible et encourager le partage. Cette mission a pour but de renforcer la solidarité et l’empathie au sein de la communauté. Ces valeurs permettent la durabilité et l’engagement que nous avons envers cette dernière.</p>
-                        <img src="sandwich-5549852_1280.jpg"/>
+                        <h2 id="tagline">Nos valeurs !</h2>
+                        <div id="valueContent">
+                            <p>Chez Vide ton Frigo, nos valeurs sont au cœur de tout ce que nous faisons. Nous voulons réduire le gaspillage alimentaire, rendre la nourriture saine plus accessible et encourager le partage. Cette mission a pour but de renforcer la solidarité et l’empathie au sein de la communauté. Ces valeurs permettent la durabilité et l’engagement que nous avons envers cette dernière.</p>
+                            <img src="sandwich-5549852_1280.jpg"/>
+                        </div>
                     </div>
 
                     <div id="u2">

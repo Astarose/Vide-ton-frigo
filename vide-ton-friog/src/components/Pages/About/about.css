@@ -35,14 +35,47 @@ h2{
 
 #brief p {
     padding: 0 4rem 1rem 4rem;
-    text-align: center;
+    text-align: justify;
 }
 
 #tagline{
     padding: 3rem;
 }
 
-#symbols img{
+#symbols{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.explainationsIcon{
     background-color: #70BD76;
-    padding: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.explainationsIcon svg{
+
+    justify-content: center;
+}
+
+#valueContent{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+#valueContent img{
+    width: 17em;
+    height: 12rem;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+#u2{
+    margin: 2rem;
+}
+
+#u2 p{
+    text-align: justify;
+    margin: 2rem 0 2rem 0;
 }
