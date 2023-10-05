@@ -1,6 +1,7 @@
 //Profile.tsx
 import "./profile.css";
 import HeaderPage from "../../Header/Header";
+import {Link} from "react-router-dom";
 
 function Profile() {
 
@@ -31,6 +32,13 @@ function Profile() {
                     Email : {user.mail}
                 </p>
             </div>
+
+            <Link to="/inscription">
+                <button className="cda">S'inscrire</button>
+            </Link>
+            <Link to="/connexion">
+                <button className="cda">Se connecter</button>
+            </Link>
 
 
         </div>
