@@ -4,8 +4,8 @@ import HeaderPage from "../Header/Header";
 import Carousel from 'react-bootstrap/Carousel';
 import React, {useState} from "react";
 import './homePage.css'
-import '../Assets/spaghetti-6639970_1280.jpg';
-import '../Assets/sandwich-5549852_1280.jpg';
+import './spaghetti-6639970_1280.jpg';
+import './sandwich-5549852_1280.jpg';
 import Footer from "../Footer/Footer";
 
 
@@ -25,10 +25,10 @@ function HomePage() {
             <div className="carousselHomePage">
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
-                        <img src="../Assets/sandwich-5549852_1280.jpg"/>
+                        <img src="./sandwich-5549852_1280.jpg"/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src="../Assets/spaghetti-6639970_1280.jpg"/>
+                        <img src="./spaghetti-6639970_1280.jpg"/>
                     </Carousel.Item>
                 </Carousel>
             </div>
