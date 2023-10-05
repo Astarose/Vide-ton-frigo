@@ -11,6 +11,8 @@ import Favorites from "./components/Pages/Favorites/Favorites";
 import Profile from "./components/Pages/Profile/Profile";
 import About from "./components/Pages/About/About";
 import Plates from "./components/Pages/Plates/Plates";
+import Connexion from "./components/Authentification/Connexion/connexion";
+import Inscription from "./components/Authentification/Inscription/inscription";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -22,6 +24,8 @@ root.render(
             <Route path="/favorites" element={<Favorites/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/plates" element={<Plates/>}/>
+            <Route path="/connexion" element={<Connexion/>}/>
+            <Route path="/inscription" element={<Inscription/>}/>
             <Route
                 path="*"
                 element={

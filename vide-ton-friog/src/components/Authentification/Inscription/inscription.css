@@ -1,0 +1,28 @@
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.input{
+    margin: auto;
+}
+
+.groupeCda{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.cda{
+    flex-direction: row;
+    width: fit-content;
+    color: white;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #70BD76;
+    margin: 5px;
+    padding: 5px;
+}
