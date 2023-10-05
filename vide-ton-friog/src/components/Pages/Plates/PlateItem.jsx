@@ -1,9 +1,10 @@
 import React from "react";
 import Swal from "sweetalert2";
+import {useNavigate, useNavigation} from "react-router-dom";
 
-export function PlateItem({item, addToCart}){
+export function PlateItem({item}){
 
-
+    const navigate = useNavigate();
     
     const add = () => {
         Swal.fire((
@@ -14,6 +15,9 @@ export function PlateItem({item, addToCart}){
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
                 Swal.fire('Saved!', '', 'success')
+                    .then(()=>{
+                        navigate("/cart")
+                    })
             } else if (result.isDenied) {
                 Swal.fire('Changes are not saved', '', 'info')
             }
@@ -27,7 +31,7 @@ export function PlateItem({item, addToCart}){
                 id="picture"
             />
             <div className="centeredContainer">
-                <h2>{item.title}</h2>
+                <h2>{item.name}</h2>
                 <p id="description">{item.description}</p>
             </div>
 
@@ -35,8 +39,8 @@ export function PlateItem({item, addToCart}){
                 <div className="toto">
                     <p id="price">{item.price}€</p>
                     <div className="typeOfPlate">
-                        {item.isHot ? <img id="isHot" src="https://img.icons8.com/ios/50/fire-element--v1.png" alt="flame"/> : ''}
-                        {item.isCold ? <img src="https://img.icons8.com/pastel-glyph/64/snowflake--v2.png" alt="snowflake"/> : ''}
+                        {item.is_warm ? <img id="isHot" src="https://img.icons8.com/ios/50/fire-element--v1.png" alt="flame"/> : ''}
+                        {item.is_cold ? <img src="https://img.icons8.com/pastel-glyph/64/snowflake--v2.png" alt="snowflake"/> : ''}
                     </div>
                 </div>
                 <button id="remove" onClick={add}>Ajouter au panier</button>

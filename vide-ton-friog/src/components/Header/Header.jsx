@@ -24,9 +24,6 @@ function HeaderPage() {
                 </Link>
             </div>
             <div className="navBar">
-                <Link to="/cart">
-                    <BiCart />
-                </Link>
                 <Link to="/profile">
                     <CgProfile />
                 </Link>
