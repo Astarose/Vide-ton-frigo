@@ -31,7 +31,7 @@ export function CartItem({ item, removeFromCart }) {
                 id="picture"
             />
             <div className="centeredContainer">
-                <h2>{item.title}</h2>
+                <h2>{item.name}</h2>
                 <p id="description">{item.description}</p>
             </div>
 

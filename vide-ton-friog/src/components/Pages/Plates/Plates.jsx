@@ -21,7 +21,6 @@ const product = [
         description: "This is item 2.",
         isCold: false,
         isHot: true,
-        quantity: 300,
     },
     {
         id: 3,
@@ -30,7 +29,6 @@ const product = [
         description: "This is item 3.",
         isCold: true,
         isHot: true,
-        quantity: 350,
     },
     {
         id: 4,
@@ -39,7 +37,6 @@ const product = [
         description: "This is item 4.",
         isCold: true,
         isHot: false,
-        quantity: 250,
     },
     {
         id: 5,
@@ -48,7 +45,6 @@ const product = [
         description: "This is item 5.",
         isCold: true,
         isHot: false,
-        quantity: 200,
     },
     {
         id: 6,
@@ -57,15 +53,24 @@ const product = [
         description: "This is item 6.",
         isCold: true,
         isHot: false,
-        quantity: 250,
     },
 ];
 function Plates() {
 
-    function addToCart(itemId) {
 
-        //const updatedPanier = panier.filter((item) => item.id !== itemId);
-    }
+
+    /*const [products, setProducts] = useState([]); // Initialize state for products
+
+    useEffect(() => {
+        // Fetch data from the API when the component mounts
+        fetch('http://localhost:3333/getAllProducts')
+            .then((response) => response.json())
+            .then((data) => setProducts(data))
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    }, []); // Empty dependency array to run this effect only once when the component mounts*/
+
 
     return(
         <div className="plates">
@@ -77,7 +82,6 @@ function Plates() {
                             <PlateItem
                                 key={item.id}
                                 item={item}
-                                addToCart={addToCart}
                             />
                         ))
                     ) : (
