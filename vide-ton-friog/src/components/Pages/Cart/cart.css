@@ -5,3 +5,18 @@ button{
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
+
+.checkoutContainer {
+    border: 0.1rem solid #D2D2D7;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.checkoutContainer h2 {
+    padding-bottom: 2rem;
+}
+
+.price{
+    padding-bottom: 2rem;
+}

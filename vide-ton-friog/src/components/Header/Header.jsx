@@ -2,7 +2,6 @@
 import './header.css';
 import { Link } from "react-router-dom";
 import { BiCart } from 'react-icons/bi';
-import { MdOutlineFavoriteBorder } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import Logo from "../Assets/Logo";
 
@@ -25,9 +24,6 @@ function HeaderPage() {
                 </Link>
             </div>
             <div className="navBar">
-                <Link to="/favorites">
-                    <MdOutlineFavoriteBorder />
-                </Link>
                 <Link to="/cart">
                     <BiCart />
                 </Link>
